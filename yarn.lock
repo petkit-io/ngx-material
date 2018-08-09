@@ -107,6 +107,12 @@
     "@angular-devkit/core" "0.6.0"
     rxjs "^6.0.0"
 
+"@angular/animations@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/@angular/animations/-/animations-6.0.0.tgz#cfc825dbfdf33bf3bf75962d1e12495aed5e3c32"
+  dependencies:
+    tslib "^1.9.0"
+
 "@angular/cli@6.0.0":
   version "6.0.0"
   resolved "https://registry.npmjs.org/@angular/cli/-/cli-6.0.0.tgz#346b356775ddf8cdb8a9a5095b0663878eca3486"
