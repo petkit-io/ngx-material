@@ -8,12 +8,10 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
