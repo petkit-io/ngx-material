@@ -3,6 +3,14 @@
     "outDir": "./dist/packages/all",
     "experimentalDecorators": true,
     "baseUrl": ".",
+    "paths": {
+      "@petkit/ngx-material": [
+        "./src/lib"
+      ],
+      "@petkit/ngx-material/*": [
+        "./src/lib/*"
+      ]
+    },
     "module": "es2015",
     "moduleResolution": "node",
     "noUnusedParameters": true,

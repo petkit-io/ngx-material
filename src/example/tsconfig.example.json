@@ -1,15 +1,10 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/example",
-    "baseUrl": ".",
-    "paths": {
-      "@petkit/ngx-material/*": [
-        "../lib/*"
-      ]
-    }
+    "outDir": "../../dist/example"
   },
   "exclude": [
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "../lib/**/*.spec.ts"
   ]
 }

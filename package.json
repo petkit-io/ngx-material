@@ -1,11 +1,19 @@
 {
   "name": "@petkit/ngx-material",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "angular6+ material components",
   "main": "index.js",
   "scripts": {
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "start": "ng serve",
+    "build": "ng-packagr -p ./src/lib/package.json",
+    "prepub:dev": "npm run build",
+    "pub:dev": "npm publish dist/lib --access public --tag dev",
+    "postpub:dev": "npm version prerelease && git push && git push --tags",
+    "prepub": "npm run build",
+    "pub": "npm publish dist/lib --access public",
+    "postpub": "npm version patch && git push && git push --tags"
   },
   "dependencies": {
   },
@@ -36,6 +44,7 @@
     "karma-coverage-istanbul-reporter": "~1.4.2",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^3.0.6",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.0.0",
     "tsickle": "^0.32.1",
