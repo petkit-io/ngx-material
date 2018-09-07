@@ -1,2 +1,2 @@
-export * from './material.module';
+export * from './mat-demo/index';
 

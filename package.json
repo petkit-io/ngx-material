@@ -4,20 +4,20 @@
   "description": "angular6+ material components",
   "main": "index.js",
   "scripts": {
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "ngPackage": {
-    "dest": "../../dist/lib",
+    "dest": "../../../dist/ngx-material",
     "lib": {
       "entryFile": "public-api.ts",
       "umdModuleIds": {}
     },
     "whitelistedNonPeerDependencies": []
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
   "peerDependencies": {
+    "@angular/material": "^6.0.0",
+    "@petkit/ngx-highlight": "^1.0.0"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,10 @@
   "bugs": {
     "url": "https://github.com/petkit-io/ngx-material/issues"
   },
-  "homepage": "https://github.com/petkit-io/ngx-material#readme"
+  "homepage": "https://github.com/petkit-io/ngx-material#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
