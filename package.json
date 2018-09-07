@@ -1,6 +1,6 @@
 {
   "name": "@petkit/ngx-material",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "angular6+ material components",
   "main": "index.js",
   "scripts": {
