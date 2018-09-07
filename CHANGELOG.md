@@ -1,5 +1,10 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/petkit-io/ngx-material/compare/v1.0.1...v1.0.2) (2018-09-07)
+
+
+
 <a name="1.0.1"></a>
-## 1.0.1 (2018-09-07)
+## [1.0.1](https://github.com/petkit-io/ngx-material/compare/b8a3b22...v1.0.1) (2018-09-07)
 
 
 ### Bug Fixes
